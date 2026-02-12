@@ -3,39 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Semantic Elements & Web Storage API</title>
-    <link rel="stylesheet" href="styles.css">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="script(1).js" defer></script> 
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<body >
-    <header>
-        <h1>Semantic Elements, Media Queries, CSS3 and Web Storage API</h1>
-        <button id="theme-toggle" class="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Switch Theme</button>
-    </header>
-    <main>
-        <article class="w-full border-t-8 border-cyan-400 shadow-lg rounded p-4 mb-6">
-            <h2>CSE B</h2>
-            <p>Bachelor of Technology, SNIST</p>
-        </article>
-        <section id="summary">
-            <h3>Professional Summary</h3>
-            <p>An Eight semesters degree program</p>
-        </section>
-        <section id="expertise">
-            <h3>Core Expertise</h3>
-            <ul class="list-disc pl-5">
-                <li>C and Data Structures</li> <li>Python</li>
-                <li>Java</li>
-                <li>AI and ML</li>
-                <li>Fullstack - React</li>
-            </ul>
-        </section>
-        <aside class="storage-status">
-            <strong>Web Storage API Note:</strong>
-            <p id="storage-msg">Setting theme...</p>
-        </aside>
-    </main>
-    <footer>&copy; 2026 WT LAB - Semantic Elements</footer>
+<body>
+
+<header>
+    <h1>Sample Shopping Cart</h1>
+</header>
+
+<main>
+    <section id="product-list">
+        <h2>Products</h2>
+
+        <div class="product">
+            <span>CHOCOLATES</span>
+            <button onclick="addToCart('CHOCOLATES', 10)">
+                Add to Cart (Rs.10)
+            </button>
+        </div>
+
+        <div class="product">
+            <span>BISCUITS</span>
+            <button onclick="addToCart('BISCUITS', 15)">
+                Add to Cart (Rs.15)
+            </button>
+        </div>
+
+        <div class="product">
+            <span>CANDIES</span>
+            <button onclick="addToCart('CANDIES', 20)">
+                Add to Cart (Rs.20)
+            </button>
+        </div>
+    </section>
+
+    <section id="cart">
+        <h2>Your Cart</h2>
+        <ul id="cartItems">
+            <!-- Cart items will appear here -->
+        </ul>
+        <p id="totalPrice">Total Price: Rs.0</p>
+    </section>
+</main>
+
+<footer>
+    <p>&copy; 2024 Shopping Cart Example</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
