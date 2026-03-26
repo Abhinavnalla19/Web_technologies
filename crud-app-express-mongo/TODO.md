@@ -1,0 +1,1 @@
+# CRUD EJS App Implementation Plan&#10;&#10;## Steps:&#10;1. [x] Create views/index.ejs (list todos)&#10;2. [x] Create views/create.ejs (add form)&#10;3. [x] Create views/edit.ejs (edit form)&#10;4. [x] Implement main.js with MongoDB CRUD routes&#10;5. [ ] Install deps & test&#10;&#10;Progress tracked here.
